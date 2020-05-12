@@ -1,0 +1,170 @@
+//@import url("https://fonts.googleapis.com/css?family=Roboto");
+//$font: Roboto;
+//$menu_font: Segoe UI;
+.sidebar {
+  position: absolute;
+  width: 260px;
+  height: percentage($number: 100);
+  left: 1px;
+  top: 0px;
+  background: #ffffff;
+
+  .verify {
+    position: absolute;
+    width: 163px;
+    height: 33px;
+    left: 32px;
+    top: 93px;
+    background: #27ae60;
+    border-radius: 30px;
+    .title {
+      position: absolute;
+      width: 112px;
+      height: 15px;
+      left: 26px;
+      right: 25px;
+      top: 9px;
+      bottom: 9px;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 14px;
+      display: flex;
+      align-items: flex-end;
+      text-align: center;
+      letter-spacing: 0.2px;
+
+      color: #ffffff;
+    }
+  }
+
+  .sidemenu {
+    position: absolute;
+    width: 260px;
+    height: 466px;
+    left: 1px;
+    top: 158px;
+    list-style: none;
+    text-decoration: none;
+
+    ul {
+      list-style: none;
+      font-size: 11px;
+      li {
+        position: absolute;
+        height: 36px;
+        width: 256px;
+        left: 0px;
+        right: 0px;
+        &:nth-child(1) {
+          top: 20px;
+        }
+        &:nth-child(2) {
+          top: 120px;
+        }
+
+        &:nth-child(3) {
+          top: 150px;
+        }
+
+        &:nth-child(4) {
+          top: 180px;
+        }
+        &:nth-child(5) {
+          top: 210px;
+        }
+        &:nth-child(6) {
+          top: 300px;
+        }
+        &:nth-child(7) {
+          top: 330px;
+        }
+        &:nth-child(8) {
+          top: 360px;
+        }
+        &:nth-child(9) {
+          top: 400px;
+        }
+        img,
+        a > img {
+          position: absolute;
+          left: 16.15%;
+          right: 76.35%;
+          top: 10px;
+          bottom: 10px;
+        }
+        .title {
+          position: absolute;
+          height: 20px;
+          left: 72px;
+          right: 24px;
+          top: calc(50% - 20px / 2);
+
+          /* Reg 16 (0.2 px) */
+
+          letter-spacing: 0.2px;
+
+          /* sidebar / gray */
+
+          color: #a4a6b3;
+        }
+
+        .selected {
+          position: absolute;
+          width: 3px;
+          left: 0px;
+          top: 0px;
+          bottom: 0px;
+
+          /* accent / light */
+
+          background: #dde2ff;
+        }
+      }
+    }
+
+    .main_title {
+      position: absolute;
+      left: 16.15%;
+      right: 70.77%;
+      top: 0%;
+      bottom: 96.78%;
+
+      font-family: Segoe UI;
+      font-size: 11px;
+      line-height: 15px;
+      /* identical to box height */
+    }
+
+    .payment_title {
+      position: absolute;
+      left: 16.15%;
+      right: 63.85%;
+      top: 21.46%;
+      bottom: 75.32%;
+
+      font-family: Segoe UI;
+      font-size: 11px;
+      line-height: 15px;
+      /* identical to box height */
+
+      /* Text */
+      color: #647787;
+    }
+    .order_title {
+      /* Account Settings */
+
+      position: absolute;
+      left: 16.15%;
+      right: 58.46%;
+      top: 58.37%;
+      bottom: 38.41%;
+
+      font-size: 11px;
+      line-height: 15px;
+      /* identical to box height */
+
+      /* Text  */
+      color: #647787;
+    }
+  }
+}
