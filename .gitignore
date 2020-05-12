@@ -1,0 +1,6 @@
+node_modules 
+yarn_react.bat
+autorun.bat 
+.vscode
+yarn-error.log
+yarn-error.js 

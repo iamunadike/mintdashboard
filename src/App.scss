@@ -1,0 +1,19 @@
+@import url("./assets/font/style.css");
+
+
+
+html,
+body {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  font-family:"Segoe UI Regular";
+}
+div#root {
+  box-sizing: border-box;
+ font-size: 42px;
+
+}
+h1,h2,h3,h5,h6,h4,span,p{
+  font-weight: normal;
+}
