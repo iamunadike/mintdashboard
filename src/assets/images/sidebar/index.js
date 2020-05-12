@@ -1,0 +1,9 @@
+export { default as goodwallet } from "./wallet-43-1.png";
+export { default as wallet } from "./wallet-43-2.png";
+export { default as badwallet } from "./wallet-43.png";
+export { default as merchant } from "./merchant.png";
+export { default as orders } from "./orders.png";
+export { default as ordercomplete } from "./order_g.png";
+export { default as order_pending } from "./order.png";
+export { default as radio } from "./radio.png";
+export { default as overview } from "./overview.png";

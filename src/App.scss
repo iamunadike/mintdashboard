@@ -1,19 +1,37 @@
 @import url("./assets/font/style.css");
 
-
-
-html,
-body {
+* {
   border: 0;
   padding: 0;
   margin: 0;
-  font-family:"Segoe UI Regular";
+  font-family: "Segoe UI Regular";
+}
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  padding: 0px;
+  box-sizing: border-box;
 }
 div#root {
   box-sizing: border-box;
- font-size: 42px;
-
+  font-size: 42px;
+  background-color: #fff;
+  border-radius: 8px;
+  font-size: 1.6em;
+  line-height: 1.4em;
+  width: 100%;
+  max-width: 100%;
 }
-h1,h2,h3,h5,h6,h4,span,p{
+h1,
+h2,
+h3,
+h5,
+h6,
+h4,
+span,
+p {
   font-weight: normal;
 }
