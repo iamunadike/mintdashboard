@@ -1,6 +1,6 @@
 import React from "react";
 import { OrdersRow } from "./OrdersRow";
-
+import "../../assets/scss/tables.scss";
 const OrdersTable = (props) => {
   return (
     <React.Fragment>
