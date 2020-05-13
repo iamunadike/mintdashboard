@@ -1,5 +1,5 @@
-import { ActionTypes } from "./types/ActionTypes";
-import { data as storeData } from "../../../data";
+import { ActionTypes } from "./ActionTypes";
+import { data as storeData } from "./data";
 // create this action objects with a type name (identity)
 // and the payload to be worked on
 export const loadData = (dataType) => ({
