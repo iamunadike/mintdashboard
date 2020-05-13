@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { DataTypes } from "../store/ActionTypes";
-//import { connect } from "react-redux";
-//import { updateData } from "../store/ActionCreators";
+import { connect } from "react-redux";
+import { updateData } from "../store/ActionCreators";
 
-export const OrdersRow = (props) => {
+const OrdersTableRow = (props) => {
   const [state, setstate] = useState({
     selected: props.order.status,
   });
@@ -30,3 +30,8 @@ export const OrdersRow = (props) => {
     </tr>
   );
 };
+
+const mapDispatchToProps = {
+  updateData,
+};
+export const OrdersRow = connect(null, mapDispatchToProps)(OrdersTableRow);
