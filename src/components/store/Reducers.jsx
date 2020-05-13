@@ -1,5 +1,4 @@
-import { ActionTypes } from "./types/ActionTypes.jsx";
-
+import { ActionTypes } from "./ActionTypes.jsx";
 
 export const TransmonitorReducer = (storeData, action) => {
   switch (action.type) {
