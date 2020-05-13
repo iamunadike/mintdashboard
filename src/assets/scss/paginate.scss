@@ -1,0 +1,72 @@
+$green: #2ecc71;
+$red: #e74c3c;
+$blue: #3498db;
+$yellow: #f1c40f;
+$purple: #8e44ad;
+$turquoise: #1abc9c;
+
+.pagination_ctrls {
+  position: relative;
+  top: 90%;
+  left: 291px;
+
+  .pgn_btns {
+    color: rgb(2, 1, 1);
+
+    font-size: 13px;
+    line-height: 17px;
+    /* identical to box height */
+    padding: 5px 0px 6px 0px;
+    width: 1029px;
+    background: white;
+    /* Showing 1 to 10 of 500 entries */
+    .left_side {
+      position: absolute;
+      margin-left: 0px;
+    }
+    .right_side {
+      position: relative;
+      margin-left: 83%;
+
+      width: auto;
+      display: flex;
+      button {
+        //@function: inline-block;
+        background-color: transparent;
+        cursor: pointer;
+        //display: flex;
+        align-self: center;
+        font-weight: 400;
+        //  line-height: 1;
+        // margin: 20px;
+
+        text-decoration: none;
+        text-align: center;
+        font-weight: 700;
+        z-index: 1;
+        padding: 0.5em 0.35em;
+        font-size: 100%;
+        outline: none;
+        color: $blue;
+
+        border-color: $blue;
+        box-shadow: 0 0 40px 40px #fff inset, 0 0 0 0 $blue;
+        transition: all 150ms ease-in-out;
+
+        &:nth-child(n + 1):nth-last-child(n-1) {
+          margin-right: 3px;
+        }
+        // &:hover {
+        //box-shadow: 0 0 10px 0 $blue inset, 0 0 10px 4px $blue;
+        // }
+        &.btn-primary {
+          color: white;
+          box-shadow: 0 0 40px 40px $blue inset, 0 0 0 0 $blue;
+        }
+        &:first-child {
+          margin-right: 3px;
+        }
+      }
+    }
+  }
+}

@@ -1,87 +1,87 @@
 .transactions {
-    div.containment {
+  position: absolute;
+  div.containment {
+    position: absolute;
+    width: 253px;
+    height: 75px;
+
+    top: 93px;
+    &:nth-child(1) {
+      left: 280px;
+    }
+    &:nth-child(2) {
+      left: 540px;
+    }
+    &:nth-child(3) {
+      left: 800px;
+    }
+    &:nth-child(4) {
+      left: 1065px;
+    }
+    span.box {
+      /* Rectangle 2.5 */
+
       position: absolute;
-      width: 253px;
-      height: 75px;
-  
-      top: 93px;
-      &:nth-child(1) {
-        left: 280px;
+      left: 0%;
+      right: 0%;
+      top: 0%;
+      bottom: 0%;
+
+      background: #ffffff;
+      border: 1px solid #eef8fd;
+      box-sizing: border-box;
+      border-radius: 2px;
+      .value {
+        float: left;
       }
-      &:nth-child(2) {
-        left: 540px;
-      }
-      &:nth-child(3) {
-        left: 800px;
-      }
-      &:nth-child(4) {
-        left: 1065px;
-      }
-      span.box {
-        /* Rectangle 2.5 */
-  
+      .graph {
         position: absolute;
-        left: 0%;
-        right: 0%;
-        top: 0%;
-        bottom: 0%;
-  
-        background: #ffffff;
-        border: 1px solid #eef8fd;
-        box-sizing: border-box;
-        border-radius: 2px;
-        .value {
-          float: left;
-        }
-        .graph {
-          position: absolute;
-          left: 67.19%;
-          right: 8.3%;
-          top: 25.33%;
-          bottom: 25.33%;
-  
-          background: linear-gradient(
-            180deg,
-            rgba(2, 148, 255, 0.126274) 33.13%,
-            rgba(255, 255, 255, 0.0001) 117.06%
-          );
-        }
-        .name {
-          /* Total Transaction Volume */
-  
-          position: absolute;
-          left: 7.11%;
-          right: 35.18%;
-          top: 21.33%;
-          bottom: 54.67%;
-  
-          font-family: Segoe UI;
-          font-size: 13px;
-          line-height: 17px;
-          /* identical to box height */
-          display: flex;
-          align-items: flex-end;
-  
-          color: #787c90;
-        }
-        .value {
-          position: absolute;
-          left: 7.11%;
-          right: 67.98%;
-          top: 45.33%;
-          bottom: 22.67%;
-  
-          font-family: Segoe UI;
-          font-size: 18px;
-          line-height: 24px;
-          /* identical to box height */
-  
-          display: flex;
-          align-items: flex-end;
-  
-          color: #262626;
-        }
+        left: 67.19%;
+        right: 8.3%;
+        top: 25.33%;
+        bottom: 25.33%;
+
+        background: linear-gradient(
+          180deg,
+          rgba(2, 148, 255, 0.126274) 33.13%,
+          rgba(255, 255, 255, 0.0001) 117.06%
+        );
+      }
+      .name {
+        /* Total Transaction Volume */
+
+        position: absolute;
+        left: 7.11%;
+        right: 35.18%;
+        top: 21.33%;
+        bottom: 54.67%;
+
+        font-family: Segoe UI;
+        font-size: 13px;
+        line-height: 17px;
+        /* identical to box height */
+        display: flex;
+        align-items: flex-end;
+
+        color: #787c90;
+      }
+      .value {
+        position: absolute;
+        left: 7.11%;
+        right: 67.98%;
+        top: 45.33%;
+        bottom: 22.67%;
+
+        font-family: Segoe UI;
+        font-size: 18px;
+        line-height: 24px;
+        /* identical to box height */
+
+        display: flex;
+        align-items: flex-end;
+
+        color: #262626;
       }
     }
   }
-  
+}
