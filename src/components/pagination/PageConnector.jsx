@@ -1,16 +1,16 @@
 import { connect } from "react-redux";
 import { withRouter } from "react-router";
+import { loadData, updateData, setPageSize } from "../store/ActionCreators";
 
 const filterType = (container, s) => {
-    if (s !== "all") {
-      return container.filter((i) => i.status.toLowerCase() === s).length;
-    }
-  };
-  
+  if (s !== "all") {
+    return container.filter((i) => i.status.toLowerCase() === s).length;
+  }
+};
 
 const mapStateToProps = (appState) => appState;
 
-const mapDispatchToProps = {load};
+const mapDispatchToProps = { loadData, updateData, setPageSize };
 
 const mergeProps = (appState, actionCreators, router) => ({
   ...appState,
