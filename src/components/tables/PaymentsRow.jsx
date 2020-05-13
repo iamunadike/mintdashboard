@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import vw from "../../assets/images/vw.png";
-import { DataTypes } from "../redux/ActionTypes";
-import { updateData } from "../redux/ActionCreators";
-import { connect } from "react-redux";
+import { DataTypes } from "../store/ActionTypes";
+//import { updateData } from "../store/ActionCreators";
+//import { connect } from "react-redux";
 
-const PaymentsRow = (props) => {
+export const PaymentsRow = (props) => {
   const [state, setstate] = useState({
     selected: props.payment.status,
   });
@@ -42,7 +42,3 @@ const PaymentsRow = (props) => {
     </tr>
   );
 };
-const mapDispatchToProps = {
-  updateData,
-};
-export default connect(null, mapDispatchToProps)(PaymentsRow);

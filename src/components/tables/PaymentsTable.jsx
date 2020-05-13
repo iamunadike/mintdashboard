@@ -1,5 +1,5 @@
 import React from "react";
-import PaymentsRow from "./PaymentsRow";
+import { PaymentsRow } from "./PaymentsRow";
 
 const PaymentsTable = (props) => {
   return (
@@ -19,7 +19,7 @@ const PaymentsTable = (props) => {
           <tbody>
             {props.payments == null || props.payments.length === 0 ? (
               <tr className="p-2" colSpan={3}>
-                <td colSpan={4} class="empty">
+                <td colSpan={4} className="empty">
                   No Payments: {props.pstatement}
                 </td>
               </tr>

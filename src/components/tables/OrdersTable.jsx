@@ -1,5 +1,5 @@
 import React from "react";
-import OrdersRow from "./OrdersRow";
+import { OrdersRow } from "./OrdersRow";
 
 const OrdersTable = (props) => {
   return (
@@ -17,8 +17,8 @@ const OrdersTable = (props) => {
           <tbody>
             {props.orders == null || props.orders.length === 0 ? (
               <tr className="p-2" colSpan={3}>
-                <td colSpan={4}>
-                  <h1>No Orders: {props.ostatement}</h1>
+                <td colSpan={4} className="empty">
+                  No Orders: {props.ostatement}
                 </td>
               </tr>
             ) : (
