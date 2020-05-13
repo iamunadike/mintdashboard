@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-export default class SearchSortRow extends Component {
+export default class SearchSortPane extends Component {
   constructor(props) {
     super(props);
     this.pageSizes = props.sizes || [5, 10, 20];
