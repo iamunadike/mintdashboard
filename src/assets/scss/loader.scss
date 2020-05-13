@@ -1,0 +1,45 @@
+.statsloader {
+  position: absolute;
+  top: 26%;
+  left: 50%;
+}
+.imgloader {
+  position: absolute;
+  top: 96%;
+  left: 50%;
+}
+.sortLoaderbox {
+  position: absolute;
+  top: 44%;
+  left: 50%;
+}
+.loader4 {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  padding: 0px;
+  border-radius: 100%;
+  border: 3px solid;
+  border-top-color: rgb(95, 66, 73);
+  border-bottom-color: rgba(255, 255, 255, 0.3);
+  border-left-color: rgba(246, 36, 89, 1);
+  border-right-color: rgba(255, 255, 255, 0.3);
+  -webkit-animation: loader4 0.5s ease-in-out infinite;
+  animation: loader4 0.5s ease-in-out infinite;
+}
+@keyframes loader4 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes loader4 {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
