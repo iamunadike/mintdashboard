@@ -1,7 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-const countStatus = (conatiner, s) => {
-  return container.filter((i) => i.status.toLowerCase() === status).length;
+import imgGraph from "../assets/images/big_graph.png";
+import "../assets/scss/statistics.scss";
+const countStatus = (container, s) => {
+  return container.filter((i) => i.status.toLowerCase() === s).length;
 };
 const Statistics = (props) => {
   return (
